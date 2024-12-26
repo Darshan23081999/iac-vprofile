@@ -22,11 +22,11 @@ env:
  EKS_CLUSTER: vprofile-eks
 
 jobs:
-   terraform:
+  terraform:
      name: "Apply terraform code changes"
      runs-on: ubuntu-latest
-     defaults:
-       run:
+      defaults:
+        run:
          shell: bash
          working-directory: ./terraform
 
